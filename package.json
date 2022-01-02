@@ -4,6 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "local": "npx hardhat node",
+    "deploy-test-network": "npx hardhat run scripts/deploy.js --network rinkeby",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
@@ -16,5 +18,8 @@
     "ethereum-waffle": "^3.4.0",
     "ethers": "^5.5.2",
     "hardhat": "^2.8.0"
+  },
+  "dependencies": {
+    "dotenv": "^10.0.0"
   }
 }
